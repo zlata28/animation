@@ -1,0 +1,56 @@
+.container{
+    width: 500px;
+    height: 80px;
+    margin: auto;
+    border: 2px solid chocolate;
+}
+.bar{
+    background-color: chocolate;
+    width: 80px;
+    height: 80px;
+    animation: myAnim 2s linear alternate infinite;
+}
+@keyframes myAnim{
+    0%{
+        margin-left:0px;
+    }
+    100%{
+        margin-left:420px;
+    }
+}
+.img{
+    filter: grayscale(100%);
+}
+.img:hover{
+    transform: scale(1.1);
+    filter: none;
+}
+@media{
+    img{
+        filter: none;
+    }
+}
+
+.box {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    border: 2px solid whitesmoke;
+    background-color: wheat;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-style: italic;
+}
+.cart{
+    
+}
+.car1{
+    
+    
+
+}
