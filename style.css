@@ -26,18 +26,15 @@
     filter: none;
 }
 @media{
-    img{
-        filter: none;
-    }
+    img{filter: none;}
 }
 
 .box {
     width: 1000px;
-    height: 500px;
+    height: 600px;
     margin: auto;
     border: 2px solid whitesmoke;
     background-color: wheat;
-
 }
 h1{
     display: flex;
@@ -47,10 +44,56 @@ h1{
     font-style: italic;
 }
 .cart{
-    
+    position: relative;
+    top: 80px;
+    left: 80px;
 }
 .car1{
-    
-    
+    width: 10%;
+    position: relative;
+    left: 100px;
+    transform: rotate(-30deg);
+    top: 70px;
+    border-radius: 30px;
+    animation: move 2s linear alternate;
+}
+.car2{
+    width: 15%;
+    position: relative;
+    left: 150px;
+    transform: rotate(-20deg);
+    font-size: 0.5s;
+    animation: move 2s linear 0.5s alternate;
+}
+.car3{
+    width: 15%;
+    position: relative;
+    left: 200px;
+    transform: rotate(20deg);
+    animation: move 2s linear 1s alternate;
+}
+.car4{
+    width: 10%;
+    position: relative;
+    left: 250px;
+     transform: rotate(580deg);  
+     top: 70px;
+     animation: move 2s linear 1.5s alternate;
+}
+.car5{
+    position: relative;
+    top: 100px;
+    left: 370px;
+    width: 10%;
+    transform: rotate(-270deg);
+    animation: move 2s linear 2s alternate;
+}
 
+ @keyframes move {
+    0% {
+        top: 800px;
+    }
+    100% {
+        top: 0;
+    }
 }
